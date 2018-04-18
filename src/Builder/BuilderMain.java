@@ -2,8 +2,11 @@ package Builder;
 
 public class BuilderMain {
     public static void main(String[] args) {
-        SportCar sportCar = new SportCar.Builder("Audi").setColor("green").setSpeed(250).build();
-        System.out.println(sportCar.toString());
+        SportCar audi = new SportCar.Builder("Audi").setColor("green").setSpeed(250).build();
+        System.out.println(audi.toString());
+
+        SportCar bmw = new SportCar.Builder("BMW").setColor("red").build();
+        System.out.println(bmw.toString());
     }
 }
 
